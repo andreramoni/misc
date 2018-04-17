@@ -1,0 +1,43 @@
+<%-
+  powershell = '%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Unrestricted -NoLogo -NoProfile'
+-%>
+---
+identity:
+  Sysprep:
+    guiRunOnce:
+      commandList:
+        - '<%= powershell %> -Command "invoke-webrequest -Uri https://raw.githubusercontent.com/bechtoldt/puppet-bootstrap/master/windows.ps1 -Outfile c:\puppet-windows.ps1"'
+        - '<%= powershell %> -Command "invoke-webrequest -Uri <%= foreman_url("built") %>"'
+    guiUnattended:
+      autoLogon: true
+      autoLogonCount: 1
+      password:
+        plainText: true
+        value: 'St0n3R@!'
+      timeZone: 110
+    identification:
+      joinWorkgroup: 'WORKGROUP'
+    licenseFilePrintData:
+      autoMode: 'perSeat'
+    userData:
+      computerName: <%= @host.shortname %>
+      fullName: 'IT'
+      orgName: 'inovex GmbH'
+      productId: '2GGM8-JNRGF-H2RK9-FKW2M-X4T34'
+nicSettingMap:
+  - adapter:
+      dnsDomain: <%= @host.domain %>
+      dnsServerList:
+        - <%= @host.subnet.dns_primary %>
+      gateway:
+        - <%= @host.subnet.gateway %>
+      ip: <%= @host.ip %>
+      subnetMask: <%= @host.subnet.mask %>
+globalIPSettings:
+  dnsServerList:
+    - <%= @host.subnet.dns_primary %>
+  dnsSuffixList:
+    - <%= @host.domain %>
+options:
+  changeSID: true
+  deleteAccounts: false
