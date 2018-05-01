@@ -6,15 +6,15 @@ identity:
   Sysprep:
     guiRunOnce:
       commandList:
-        - '<%= powershell %> -Command "invoke-webrequest -Uri https://raw.githubusercontent.com/bechtoldt/puppet-bootstrap/master/windows.ps1 -Outfile c:\puppet-windows.ps1"'
         - '<%= powershell %> -Command "invoke-webrequest -Uri <%= foreman_url("built") %>"'
+        - '<%= powershell %> -Command "msiexec /qn /norestart /i C:\puppet.msi PUPPET_MASTER_SERVER=foreman.ext.lab"'
     guiUnattended:
       autoLogon: true
       autoLogonCount: 1
       password:
         plainText: true
-        value: 'St0n3R@!'
-      timeZone: 110
+        value: 'adminadmin'
+      timeZone: 090
     identification:
       joinWorkgroup: 'WORKGROUP'
     licenseFilePrintData:
@@ -41,3 +41,4 @@ globalIPSettings:
 options:
   changeSID: true
   deleteAccounts: false
+
