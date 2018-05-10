@@ -1,4 +1,4 @@
-zsh:1: command not found: $
+<%-
   powershell = '%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe -ExecutionPolicy Unrestricted -NoLogo -NoProfile'
 -%>
 ---
