@@ -23,7 +23,7 @@ identity:
       computerName: <%= @host.shortname %>
       fullName: 'IT'
       orgName: 'inovex GmbH'
-      productId: '2GGM8-JNRGF-H2RK9-FKW2M-X4T34'
+      productId: ''
 nicSettingMap:
   - adapter:
       dnsDomain: <%= @host.domain %>
