@@ -1,5 +1,0 @@
-disable-firewall	true	
-enable-puppetlabs-puppet5-repo	true	
-http-proxy	proxy.ext.lab	
-http-proxy-port	3128	
-selinux-mode	disabled
