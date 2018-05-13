@@ -14,3 +14,4 @@ nicSettingMap:
       subnetMask: <%= interface.subnet.mask %>
       <% if interface.primary -%>gateway: [<%= interface.subnet.gateway %>]<% end %>
 <% end %>
+
