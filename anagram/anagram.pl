@@ -17,3 +17,7 @@ foreach(keys(%hash)){
 }
 print "\n";
 
+
+# Perl6: say words.classify(*.comb.Bag).values
+
+
