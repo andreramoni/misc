@@ -1,0 +1,12 @@
+# infra_coding_101/00_Proposals
+
+-----------------------------
+Ramoni:
+a) Application Programing Interface. A way to remotely interact with a running application, usually via HTTP protocol.
+b) A language that is able to simulate the turing machine. A Turing machine is a mathematical model of computation that defines an abstract machine, which manipulates symbols on a strip of tape according to a table of rules. Despite the model's simplicity, given any computer algorithm, a Turing machine capable of simulating that algorithm's logic can be constructed. https://en.wikipedia.org/wiki/Turing_machine
+c) Imperative languages describe commands for the computer to perform. Declarative languages describe their desired results without explicitly listing commands or steps that must be performed. https://en.wikipedia.org/wiki/Declarative_programming
+
+-----------------------------
+
+
+

@@ -1,0 +1,11 @@
+# infra_coding_101/03_Challenge
+
+Goal: create a BOT that interacts with any external tool or API 
+Allowed bot platforms: Slack, Teams, Telegram, Jabber, Whatsapp, IRC and Workplace.
+Allowed external tools to interact with: Trello, AWS, Azure, GCP, VMware, GoCD, Foreman.
+Examples:
+  - A Slack bot that receives a message and update a trello card.
+  - A Telegram bot that creates VMs on Azure.
+
+
+

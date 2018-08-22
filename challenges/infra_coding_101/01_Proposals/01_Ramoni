@@ -1,0 +1,34 @@
+# infra_coding_101/01_Proposals
+
+-----------------------------
+Ramoni:
+Tool used: Puppet.
+
+a)
+user { 'ramoni':
+  ensure => present,
+  home => '/home/ramoni',
+  managehome => true,
+  shell => '/bin/bash',
+}
+
+b)
+package { 'htop':
+  ensure => present,
+}
+
+c)
+file { '/teste':
+  ensure => file,
+  content => 'conteudo do arquivo',
+}
+
+d)
+service { 'sshd':
+  ensure => running,
+  enable => true,
+}
+
+
+-----------------------------
+

@@ -1,0 +1,12 @@
+# infra_coding_101/02_Challenge
+
+Goal: learn how to deal with strings/arrays
+Task: write a program to identify what words (passed as parameters) are anagrams
+Allowed languages: Powershell, C, Go, Python, Perl, Ruby, Java, Assembly - imperative language.
+Example:
+  Execution: ./anagram roma fresa amor casa frase redidencia um dois tres frases
+  Output:
+    - roma amor
+    - fresa frase
+
+

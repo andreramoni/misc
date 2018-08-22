@@ -1,0 +1,13 @@
+# infra_coding_101/01_Challenge
+
+Goal: become able to do very basic stuff using a declarative infrastructure language/tool.
+Allowed tools: Windows DSC, Puppet, Ansible, Chef, Salt and CfEngine.
+Tasks:
+  a) Create a new user
+  b) Install a software
+  c) Manage a file content
+  d) Bring a service up
+Expected: the code for each task using the allowed tools.
+
+
+

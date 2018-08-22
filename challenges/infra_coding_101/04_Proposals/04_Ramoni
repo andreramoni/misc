@@ -1,0 +1,29 @@
+# file gce_compute:
+resource "google_compute_instance" "default" {
+  name         = "tftest"
+  machine_type = "n1-standard-1"
+  zone         = "us-east1-b"
+  boot_disk {
+    initialize_params {
+      image = "debian-cloud/debian-9"
+    }
+  }
+  scratch_disk {
+  }
+  network_interface {
+    network = "default"
+    access_config {
+    }
+  }
+}
+
+# file google.tf
+// Configure the Google Cloud provider
+provider "google" {
+  credentials = "${file("project01.json")}"
+  project     = "project01-199416"
+  region      = "us-east1"
+}
+
+# file project01.json ommited. Personal account used.
+
