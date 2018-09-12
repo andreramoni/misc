@@ -2,7 +2,7 @@
 #
 # https://github.com/eljojo/telegram_bot
 #
-mytoken = '513873867:AAERmYzsqCpIPDqRdMOgRdFW2jyLfed3MFU'
+mytoken = ''
 
 require 'telegram_bot'
 
