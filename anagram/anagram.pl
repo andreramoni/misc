@@ -1,5 +1,5 @@
 #!/usr/bin/perl
-my $debug = 1;
+my $debug = 0;
 print "\nTratando entrada:\n" if $debug;
 foreach(@ARGV){
   my @arg = split(//,$_);
